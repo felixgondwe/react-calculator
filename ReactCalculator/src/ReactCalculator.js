@@ -21,9 +21,9 @@ class ReactCalculator extends Component {
    constructor(props){
         super(props);
         this.state = {
-          //  previousInputValue: 0,
-            inputValue: 0
-          //  selectedSymbol: null
+          previousInputValue: 0,
+            inputValue: 0,
+          selectedSymbol: null
         }
     }
 
@@ -56,6 +56,7 @@ class ReactCalculator extends Component {
                 inputRow.push(
                     <InputButton
                 value={input}
+                highlight={this.state.selectedSymbol === input}
                 onPress={this._onInputButtonPressed.bind(this, input)}
                 key={r + "-" + i}/>
                 );
@@ -69,7 +70,12 @@ class ReactCalculator extends Component {
         alert(input)
     }*/
     _onInputButtonPressed(input){
-        alert(input)
+       switch (typeof input) {
+            case 'number':
+                return this._handleNumberInput(input)
+            case 'string':
+                return this._handleStringInput(input)
+        }
        /* switch (typeof input) {
             case 'number':
                 return this._handleNumberInput(input)
@@ -112,6 +118,12 @@ class ReactCalculator extends Component {
                 break;
         }
     }
+    /**
+     * implement decimal operator
+     * implement 0 division
+     * mplement CE or C to clear input
+     */
 }
+
 
 AppRegistry.registerComponent('ReactCalculator', () => ReactCalculator);
