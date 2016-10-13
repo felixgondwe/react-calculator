@@ -10,3 +10,7 @@ Learn once, write everywhere! ;)
 
 --
 Detailed documentation is in progress, hang in there. 
+
+--
+App is ready to be deployed in Google play market.
+
