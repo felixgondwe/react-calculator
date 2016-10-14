@@ -6,10 +6,11 @@ This is a simple basic calculator mobile app(android or Ios) built with ReactNat
 
 Take away points:
 ReactNative was so easy to setup than NativeScript. 
-Learn once, write everywhere! ;)
+Learn once, write everywhere! :)
 
 --
 Detailed documentation is in progress, hang in there. 
+
 
 --
 App is ready to be deployed in Google play market.

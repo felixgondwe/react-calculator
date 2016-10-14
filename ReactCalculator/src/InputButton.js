@@ -1,3 +1,8 @@
+/**
+ * This represent input button
+ * @author:felixgondwe
+ */
+
 import React, { Component } from 'react';
 import {
     TouchableHighlight,

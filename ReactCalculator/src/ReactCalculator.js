@@ -1,3 +1,7 @@
+/**
+ * Business logic
+ * @author:felixgondwe
+ */
 import React, { Component } from 'react';
 import {
     View,
